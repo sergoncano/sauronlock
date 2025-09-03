@@ -39,7 +39,7 @@ PanelWindow {
 
 	MediaPlayer {
 		id: audioPlayer
-		source: "Screech.wav" 
+		source: "assets/screech.wav" 
 		audioOutput: AudioOutput {}
 	}
 
