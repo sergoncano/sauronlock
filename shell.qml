@@ -30,14 +30,13 @@ PanelWindow {
 			} else if(event.key == this.unlockKey) {
 				Qt.quit()
 			} else {
-				//this.color = "white"
 				audioPlayer.play()
 				videoPlayer.play()
 			}
 		}
 		MediaPlayer {
 			id: audioPlayer
-			source: "assets/screech.wav" 
+			source: "assets/audio.wav" 
 			audioOutput: AudioOutput {}
 		}
 		VideoOutput {
@@ -51,7 +50,7 @@ PanelWindow {
 
 	MediaPlayer {
 		id: videoPlayer
-		source: "assets/sauron.mp4"
+		source: "assets/video.mp4"
 		videoOutput: videoOutput
 	}
 
